@@ -13,4 +13,4 @@ jobs:
           distribution: 'zulu'
           java-version: '11'
       - name: Maven Package
-        run: mvn -B -q clean package
+        run: mvn -B clean package
