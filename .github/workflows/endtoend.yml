@@ -29,4 +29,4 @@ jobs:
         with:
           name: application-jar
       - name: list
-        run: ls -la target
+        run: ls -la
