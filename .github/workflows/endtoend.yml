@@ -23,6 +23,7 @@ jobs:
           path: target/*.jar
 
   docker:
+    if: contains( github.ref, 'refs/tags')
     runs-on: ubuntu-latest
     needs: [build]
     steps:
