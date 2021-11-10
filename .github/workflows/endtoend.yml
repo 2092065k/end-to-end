@@ -29,5 +29,8 @@ jobs:
         with:
           name: application-jar
           path: target
-      - name: list
-        run: ls -la target
+      - name: Docker Build
+        uses: docker/build-push-action@v2
+        with:
+          push: false
+          tags: end-to-end:latest
