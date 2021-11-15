@@ -1,6 +1,6 @@
 name: End to End CI/CD
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
 
