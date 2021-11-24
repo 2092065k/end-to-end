@@ -10,9 +10,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.example</groupId>
+	<groupId>org.finos-test</groupId>
 	<artifactId>endtoend</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>endtoend</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>

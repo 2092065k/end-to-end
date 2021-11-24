@@ -1,4 +1,4 @@
-package com.example.endtoend;
+package org.finostest.endtoend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
