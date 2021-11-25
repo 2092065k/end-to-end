@@ -44,7 +44,7 @@ jobs:
           gpg-passphrase: MAVEN_GPG_PASSPHRASE
 
       - name: Set project version
-        run: mvn -B version:set -DnewVersion="${{ env.RELEASE_VERSION }}"
+        run: mvn -B versions:set -DnewVersion="${{ env.RELEASE_VERSION }}"
 
       - name: Publish to Maven Central
         run: mvn -B deploy -P release
