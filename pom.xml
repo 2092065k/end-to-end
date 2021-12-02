@@ -14,7 +14,7 @@
 	<artifactId>endtoend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>endtoend</name>
-	<description>Demo project for Spring Boot</description>
+	<description>End to End CI/CD example</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
