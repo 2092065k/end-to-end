@@ -11,7 +11,7 @@
 
 	<groupId>org.finos-test</groupId>
 	<artifactId>endtoend</artifactId>
-	<version>0.8.1-SNAPSHOT</version>
+	<version>0.9.0</version>
 	<name>endtoend</name>
 	<description>End to End CI/CD example</description>
 	<properties>
