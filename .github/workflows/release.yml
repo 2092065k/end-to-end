@@ -49,4 +49,4 @@ jobs:
         run: mvn -B release:prepare -DpreparationGoals=clean -DreleaseVersion=${{ github.event.inputs.releaseVersion }} -DdevelopmentVersion=${{ env.DEVELOPMENT_VERSION }} -P release
 
       - name: Perform release
-        run: mvn -B release:perform -Darguments='-DargLine="-Xms3g -Xmx3g"' -P release
+        run: mvn -B release:perform -Darguments='-X -DargLine="-Xms3g -Xmx3g"' -P release
