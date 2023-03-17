@@ -17,6 +17,7 @@ jobs:
       - name: Clean repo
         run: |
           LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
-          git push --delete origin $LATEST_TAG
-          git reset --hard HEAD~2
-          git push --force
+          echo $LATEST_TAG
+#          git push --delete origin $LATEST_TAG
+#          git reset --hard HEAD~2
+#          git push --force
