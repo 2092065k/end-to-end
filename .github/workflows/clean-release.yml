@@ -1,0 +1,22 @@
+name: Clean repo after failed release
+
+on: [workflow_dispatch]
+
+jobs:
+  clean-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Configure git
+        run: |
+          git config --global user.email "37706051+finos-admin@users.noreply.github.com"
+          git config --global user.name "FINOS Administrator"
+
+      - name: Clean repo
+        run: |
+          LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+          git push --delete origin $LATEST_TAG
+          git reset --hard HEAD~2
+          git push --force
